@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <!-- Responsive Meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="theme-color" content="indigo" />
+  <!-- <meta http-equiv="refresh" content="1">-->
+  <!--[if lt IE 9]>
+	   <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha512-UDJtJXfzfsiPPgnI5S1000FPLBHMhvzAMX15I+qG2E2OAzC9P1JzUwJOfnypXiOH7MRPaqzhPbBGDNNj7zBfoA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <![endif]-->
+  <!-- Page Informations -->
+  <meta name="author" content="Wilfried-Tech" />
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="">
+  <meta property="og:url" content="">
+
+  <meta property="og:title" content="None">
+  <meta name="twitter:title" content="None">
+
+  <meta property="og:image" content="assets/images/favicon/favicon.png">
+  <meta property="og:image:alt" content="">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="1024">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:image:src" content="">
+
+  <meta name="description" content="" />
+  <meta property="og:description" content="">
+  <meta name="twitter:description" content="">
+
+  <meta name="twitter:site" content="@None">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="keywords" content="" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="icon" type="icon" href="assets/images/favicon/favicon.png">
+  <script type="text/javascript" src="assets/fonts/icon/icons.js"></script>
+  <title>Equation Solver</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <nav class="nav-bar">
+        <h1 class="nav-title">Linear Equation System Solver</h1>
+      </nav>
+    </header>
+    <aside class="content">
+      <div class="parameters">
+        <p class="nb-variable">
+          <label for="variable">Number of Variable</label>
+          <input type="number" id="variable" min="1" value="2">
+        </p>
+      </div>
+
+      <fieldset class="equations">
+        <legend>Equations</legend>
+        <div class="equations-content"></div>
+        <div class="equations-error"></div>
+      </fieldset>
+
+      <div class="solve">
+        <div class="button" tabindex="0">
+          <span>Resolve</span>
+          <img src="assets/images/spin.gif" alt="spin">
+        </div>
+      </div>
+
+      <fieldset class="solution">
+        <legend>Solution</legend>
+        <div class="solution-content"></div>
+      </fieldset>
+
+    </aside>
+    <footer class="foot" id="footer">
+      <p class="copyright">
+        &copy; Wilfried-Tech &infin; Coder-Master
+      </p>
+      <p class="account">
+      <ul>
+        <li><a href="tel:657933001"><span class="fa fa-phone"></span></a></li>
+        <li><a href="whatsapp://send?phone=+237657933001"><span class="fab fa-whatsapp"></span></a></li>
+        <li><a href="https://www.facebook.com/wilfriedlarry.nyandjou"><span class="fab fa-facebook"></span></a></li>
+        <li><a href="mailto:wilfriedtech.dev@gmail.com"><span class="fab fa-google"></span></a></li>
+        <li><a href="https://github.com/Wilfried-Tech"><span class="fab fa-github"></span></a></li>
+        <li><a href="https://www.linkedin.com/in/nyandjou-wilfried-larry"><span class="fab fa-linkedin"></span></a></li>
+      </ul>
+      </p>
+    </footer>
+  </div>
+  <!-- JavaScript -->
+  <script type="text/javascript" src="js/matrix.js"></script>
+  <script type="text/javascript" src="js/setup.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
