@@ -17,7 +17,7 @@ body {
 body {
   font-size: large;
   text-align: center;
-  background-color: #e0e0e0;
+  background-color: #0d6efd30;
 }
 
 .container {
@@ -34,7 +34,7 @@ body {
 .nav-bar {
   height: 50px;
   width: 100%;
-  background-color: rgb(48, 63, 159);
+  background-color: #0d6efd;
   text-align: center;
   text-transform: capitalize;
   font-weight: bolder;
@@ -46,7 +46,7 @@ body {
   width: 90%;
   margin: 15px auto;
   padding: 5px;
-  box-shadow: inset 2px 2px 4px #e0e0e0, inset -2px -2px 4px #efefef;
+  box-shadow: inset 2px 2px 4px #0d6efd30, inset -2px -2px 4px #0b4cdb30;
   border-radius: 30px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
@@ -61,7 +61,7 @@ body {
   font-size: 17px;
   font-family: cursive;
   text-align: center;
-  border: 2px solid #e0e0e0;
+  border: 2px solid #0d6efd30;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   -ms-border-radius: 7px;
@@ -73,7 +73,7 @@ fieldset {
   margin: 0 auto;
   padding: 15px;
   border: none;
-  box-shadow: inset 2px 2px 4px #e0e0e0, inset -2px -2px 4px #efefef;
+  box-shadow: inset 2px 2px 4px #0d6efd30, inset -2px -2px 4px #0b4cdb30;
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -113,7 +113,7 @@ fieldset legend {
   width: 100%;
   padding: 5px 10px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  box-shadow: inset 2px 2px 4px #e0e0e0, inset -2px -2px 4px #efefef;
+  box-shadow: inset 2px 2px 4px #0d6efd30, inset -2px -2px 4px #0b4cdb30;
   border: none;
   font-size: medium;
   border-radius: 10px;
@@ -126,7 +126,7 @@ fieldset legend {
 }
 
 .equations-content input:disabled {
-  background-color: #efefef;
+  background-color: #0b4cdb30;
 }
 
 .equations-content .equation-error,
@@ -148,7 +148,7 @@ div.solve {
 
 .solve div.button {
   width: 100px;
-  box-shadow: 2px 2px 4px #e0e0e0, inset -2px -2px 4px #efefef;
+  box-shadow: 2px 2px 4px #0d6efd30, inset -2px -2px 4px #0b4cdb30;
   padding: 7px;
   margin: 0 auto;
   display: flex;
@@ -164,7 +164,7 @@ div.solve {
 
 .solve div.button:active,
 div.button[disabled] {
-  background-color: #efefef;
+  background-color: #0b4cdb30;
 }
 
 .solve img {
@@ -200,7 +200,7 @@ div.button[disabled] {
 footer.foot {
   text-align: center;
   width: 100%;
-  box-shadow: 0px -1px 2px #e0e0e0;
+  box-shadow: 0px -1px 2px #0d6efd30;
   margin-top: 20px;
 }
 

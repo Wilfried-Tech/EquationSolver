@@ -30,7 +30,7 @@ function addInputs(container, count) {
     //var x = ['x+y=1','x-y=0'][i%2]
     container.insertAdjacentHTML('beforeend', `
         <p>
-            <input type="text" value='${x}' class="equation ${(i % 2 == 0) ? "even" : "odd"}" />
+            <input type="text" class="equation ${(i % 2 == 0) ? "even" : "odd"}" />
             <span class="equation-error"></span>
         </p>
         `);
