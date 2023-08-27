@@ -1,3 +1,5 @@
+
+
 * {
   margin: 0;
   padding: 0;
@@ -182,8 +184,17 @@ div.button[disabled] {
   font-style: italic;
 }
 
-.solution-content .solution-value {
+.solution-value {
   margin-left: 10px;
+  display: inline-block;
+  width: min-content;
+  font-family: 'math';
+  text-align: center;
+  transform: translateY(25%);
+}
+
+.solution-value hr{
+  width: 100%
 }
 
 footer.foot {
