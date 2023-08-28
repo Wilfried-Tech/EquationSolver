@@ -50,20 +50,27 @@
       </nav>
     </header>
     <aside class="content">
+      <div class="solve-examples">
+        <div class="spin-btn solve-example">
+          <div class="button" tabindex="0">
+            <span>See Example</span>
+            <img src="assets/images/spin.gif" alt="spin">
+          </div>
+        </div>
+      </div>
       <div class="parameters">
         <p class="nb-variable">
           <label for="variable">Number of Variable</label>
           <input type="number" id="variable" min="1" value="2">
         </p>
       </div>
-
       <fieldset class="equations">
         <legend>Equations</legend>
         <div class="equations-content"></div>
         <div class="equations-error"></div>
       </fieldset>
 
-      <div class="solve">
+      <div class="spin-btn solve">
         <div class="button" tabindex="0">
           <span>Resolve</span>
           <img src="assets/images/spin.gif" alt="spin">
@@ -96,6 +103,7 @@
   <script type="text/javascript" src="js/matrix.js"></script>
   <script type="text/javascript" src="js/setup.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/example.js"></script>
 </body>
 
 </html>

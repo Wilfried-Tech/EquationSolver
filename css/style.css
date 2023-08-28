@@ -1,5 +1,3 @@
-
-
 * {
   margin: 0;
   padding: 0;
@@ -142,11 +140,11 @@ fieldset legend {
   padding-left: 30px;
 }
 
-div.solve {
+div.spin-btn {
   margin: 10px;
 }
 
-.solve div.button {
+.spin-btn div.button {
   width: 100px;
   box-shadow: 2px 2px 4px #0d6efd30, inset -2px -2px 4px #0b4cdb30;
   padding: 7px;
@@ -162,12 +160,16 @@ div.solve {
   user-select: none;
 }
 
-.solve div.button:active,
+.solve-examples div.button {
+  width: 90%;
+}
+
+.spin-btn div.button:active,
 div.button[disabled] {
   background-color: #0b4cdb30;
 }
 
-.solve img {
+.spin-btn img {
   width: 20px;
   height: 20px;
   margin-left: 7px;
@@ -193,7 +195,7 @@ div.button[disabled] {
   transform: translateY(25%);
 }
 
-.solution-value hr{
+.solution-value hr {
   width: 100%
 }
 
@@ -254,4 +256,11 @@ ul .fa-phone {
 
 ul .fa-youtube {
   color: red;
+}
+
+
+/* Example */
+
+.mark-active {
+  border: 2px solid red;
 }

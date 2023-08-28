@@ -6,6 +6,7 @@ const equationsErrorContainer = document.querySelector('.equations-error');
 const resolveButton = document.querySelector('.solve .button');
 const solutionContainer = document.querySelector('.solution-content');
 
+
 var nbVariable = Number(variableInput.value);
 
 addInputs(equationContainer, nbVariable);
@@ -21,9 +22,8 @@ variableInput.addEventListener("input", debouce(function() {
 resolveButton.addEventListener("click", async function() {
   if (resolveButton.hasAttribute("disabled")) return;
 
-  resolveButton.lastElementChild.style.display = "block";
-  resolveButton.setAttribute("disabled", true);
-  await new Promise((resolve) => setTimeout(resolve, 1000))
+  await spinning(resolveButton)
+  
   solutionContainer.innerHTML = ""
   equationsErrorContainer.innerHTML = ""
   solutionContainer.innerHTML = ""
@@ -117,6 +117,5 @@ resolveButton.addEventListener("click", async function() {
     }
   }
 
-  resolveButton.lastElementChild.style.display = "none";
-  resolveButton.removeAttribute("disabled");
+  clearSpinning(resolveButton)
 })

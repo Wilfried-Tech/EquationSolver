@@ -44,8 +44,10 @@ function addInputs(container, count) {
  * @param {String} selector css selector
  */
 function clearContent(selector) {
-  document.querySelectorAll(selector).forEach(elt => { elt.innerHTML = "";
-    console.log(elt) })
+  document.querySelectorAll(selector).forEach(elt => {
+    elt.innerHTML = "";
+    console.log(elt)
+  })
 }
 
 
@@ -312,4 +314,25 @@ function renderFraction(string) {
   if (!string.includes('/')) return string;
   const [num, den] = string.split('/')
   return `<span>${num.trim()}</span><hr height='1'><span>${den}</span>`
+}
+
+/**
+ * wait spin end and resolve
+ * @param {HTMLElement} btn
+ */
+async function spinning(btn) {
+  btn.lastElementChild.style.display = "block";
+  btn.setAttribute("disabled", true);
+  return new Promise(function(resolve) {
+    setTimeout(resolve, 1000)
+  })
+}
+
+/**
+ * clear spinning
+ * @param {HTMLElement} btn
+ */
+function clearSpinning(btn) {
+  btn.lastElementChild.style.display = "none";
+  btn.removeAttribute("disabled");
 }
