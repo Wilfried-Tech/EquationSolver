@@ -52,7 +52,7 @@ body {
   -o-border-radius: 30px;
 }
 
-.parameters #variable {
+.parameters .variable {
   width: 75px;
   padding: 3px;
   border-radius: 7px;
@@ -192,7 +192,15 @@ div.button[disabled] {
   width: min-content;
   font-family: 'math';
   text-align: center;
+}
+
+.solution-value .fraction {
+  display: block;
   transform: translateY(25%);
+  -webkit-transform: translateY(25%);
+  -moz-transform: translateY(25%);
+  -ms-transform: translateY(25%);
+  -o-transform: translateY(25%);
 }
 
 .solution-value hr {
@@ -261,6 +269,6 @@ ul .fa-youtube {
 
 /* Example */
 
-.mark-active {
+#mark-active {
   border: 2px solid red;
 }
